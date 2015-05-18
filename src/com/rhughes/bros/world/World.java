@@ -83,5 +83,15 @@ public class World {
 				return (Player)ent;
 		return null;
 	}
+	public Block find(int x, int y){
+		for (int i = 0; i < blocks.size(); i++){
+			int x2 = blocks.get(i).getX();
+			int y2 = blocks.get(i).getY();
+			if (x > x2 && x < x2 + 32)
+				if(y > y2 && y < y2 + 32)
+					return blocks.get(i);
+		}
+		return null;
+	}
 
 }
