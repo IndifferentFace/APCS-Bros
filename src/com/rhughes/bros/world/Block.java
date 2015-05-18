@@ -39,5 +39,11 @@ public class Block {
     public Rectangle getLeft() {
         return new Rectangle(x + 28, y, 4, 32);
     }
+    
+    public int getX()
+    {return x;}
+    
+    public int getY()
+    {return y;}
 
 }
